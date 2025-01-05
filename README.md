@@ -1,6 +1,6 @@
 # RNA_FOLDING_PROBLEM
 
-`RNA_FOLDING_PROBLEM` is a Python package designed for the RNA structures analyses, focusing on calculating the interaction profiles between base pairs in RNA. The analysis includes calculating the distances between C3' atoms of ribonucleotides and computing log-ratio scores for each base pair using PDB files. The results can be visualized and saved for further analysis. 
+`RNA_folding_problem` is a Python package designed for the RNA structures analyses, focusing on calculating the interaction profiles between base pairs in RNA. The analysis includes calculating the distances between C3' atoms of ribonucleotides and computing log-ratio scores for each base pair using PDB files. The results can be visualized and saved for further analysis. 
 
 
 ## Package structure
@@ -24,7 +24,7 @@ Clone this repository and install the required dependencies:
 
 ```bash
 git clone <https://github.com/Ju960/RNA_folding_problem.git>
-cd RNA_FOLDING_PROBLEM
+cd RNA_folding_problem
 pip install -r requirements.txt
 ```
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 To extract the C3' atom coordinates from a folder containing PDB files, calculate distances, frequencies and scores for each base pairs:
 
 ```python
-from RNA_FOLDING_PROBLEM.Training_script import process_pdb_files
+from RNA_folding_problem.Training_script import process_pdb_files
 
 pdb_file = "path/to/your/pdb_folder"
 scores_dict, bins = process_pdb_files(input_dir)
@@ -50,7 +50,7 @@ scores_dict, bins = process_pdb_files(input_dir)
 To plot and save the interaction profiles for each base pair:
 
 ```python
-from RNA_FOLDING_PROBLEM.Plot_interaction_score import plot_interaction_profiles
+from RNA_folding_problem.Plot_interaction_score import plot_interaction_profiles
 plot_interaction_profiles(scores_dict, bins)
 
 ```
@@ -60,7 +60,7 @@ plot_interaction_profiles(scores_dict, bins)
 To calculate the Gibbs Energy for a given PDB file:
 
 ```python
-from RNA_FOLDING_PROBLEM.energy_calculation import extract_c3_prime_distances_with_pairs
+from RNA_folding_problem.energy_calculation import extract_c3_prime_distances_with_pairs
 
 pdb_file = "path/to/your/file.pdb"
 output_file = "path/to/output_file.txt"
