@@ -6,16 +6,16 @@
 ## Package structure
 
 RNA_INTERACTION_ANALYSIS/
-├── [__init__.py]                    # Initialization script for the package
-├── [rna_pdb_files]                  # Folder containing PDB files and output results
-│   ├── [output_results]             # Folder for saving computed results (e.g., interaction profiles, scores)
-├── [Native_Pred_structure]          # Folder containing native and predictive PDB files with their scores 
-├── [Training_script.py]             # Functions to extract C3' coordinates from PDB files, compute distances, frequencies and log-ratio scores for each base pair
-├── [Plot_interaction_score.py]      # Function to plot interaction profiles and combined results
-├── [energy_calculation.py]          # Functions to calculate the Gibbs Energy for 1 native and 1 predictive
-├── [README.md]                      # Documentation for the package
-├── [requirements.txt]               # Required Python packages for the project
-└──[example.ipynb]                   # Jupyter notebook example for using the package
+├── [__init__.py]                    # Initialization script for the package  
+├── [rna_pdb_files]                  # Folder containing PDB files and output results  
+│   ├── [output_results]             # Folder for saving computed results (e.g., interaction profiles, scores)  
+├── [Native_Pred_structure]          # Folder containing native and predictive PDB files with their scores  
+├── [Training_script.py]             # Functions to extract C3' coordinates from PDB files, compute distances, frequencies and log-ratio scores for each base pair  
+├── [Plot_interaction_score.py]      # Function to plot interaction profiles and combined results  
+├── [energy_calculation.py]          # Functions to calculate the Gibbs Energy for 1 native and 1 predictive  
+├── [README.md]                      # Documentation for the package  
+├── [requirements.txt]               # Required Python packages for the project  
+└──[example.ipynb]                   # Jupyter notebook example for using the package  
 
 
 ## Installation
