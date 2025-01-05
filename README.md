@@ -23,7 +23,7 @@ RNA_INTERACTION_ANALYSIS/
 Clone this repository and install the required dependencies:
 
 ```bash
-git clone <https://github.com/Ju960/RNA_folding_problem.git>
+git clone https://github.com/Ju960/RNA_folding_problem.git
 cd RNA_folding_problem
 pip install -r requirements.txt
 ```
